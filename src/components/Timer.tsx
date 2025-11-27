@@ -5,7 +5,7 @@ interface TimerProps {
   duration?: number; // in seconds
 }
 
-const Timer: React.FC<TimerProps> = ({ onExpire, duration = 120 }) => {
+const Timer: React.FC<TimerProps> = ({ onExpire, duration = 600 }) => {
   const [time, setTime] = useState(duration);
 
   useEffect(() => {
@@ -33,3 +33,4 @@ const Timer: React.FC<TimerProps> = ({ onExpire, duration = 120 }) => {
 };
 
 export default Timer;
+
