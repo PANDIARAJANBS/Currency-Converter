@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 24px auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+}
+
+.panel > h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: #070f4e;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 38px;
+}
+
+.input:focus {
+    box-shadow: 0px 0px 3px inset #eee;
+}
+
+.error {
+    color: #d53f3f;
+    height: 16px;
+}
+
+.result {
+    padding-top: 18px;
+}
+
+
+.Output {
+    border: 20px solid #edf7fa;
+    border-radius: 4px;
+    background: #fff;
+    padding: 15px 0;
+}
+
+.Output > p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Output > p:last-child {
+    background: #070f4e;
+    width: 170px;
+    margin: 11px auto 0;
+    padding: 7px 0;
+    font-size: 14px;
+    color: #fff;
+
+}
+/* Combobox */
+.combo {
+    position: relative;
+    width: 100%;
+    padding-bottom: 18px;
+}
+
+.combo__inputWrap {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 0;
+    align-items: center;
+    position: relative;
+}
+
+.combo__selected {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    color: #000;
+    background: #edf7fa;
+    font-size: 14px;
+}
+
+.combo__flag {
+    width: 20px;
+    height: 14px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.combo__input {
+    width: 100%;
+    padding: 0px 12px;
+    padding-left: 14px;
+    border: 1px solid #ccc;
+    background: #edf7fa;
+    color: #000;
+    height: 38px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.input:focus-visible, .combo__input:focus-visible {
+    outline: 0 none;
+}
+
+.combo__toggle {
+    height: 38px;
+    border: 1px solid #ccc;
+    background: #edf7fa;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.combo__list {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    margin-top: 8px;
+    max-height: 240px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    padding: 6px;
+}
+
+.combo__item {
+    display: flex;
+    grid-template-columns: 24px auto;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000;
+}
+
+.combo__item.active {
+    background-color: #dbeafe;
+}
+
+.combo__item:hover {
+    background: #f4f7ff;
+}
+
+.currency-name {
+    color: #000;
+}
+
+.convertBtn {
+    background: #070f4e;
+    color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    opacity: 0.8;
+    border: 0;
+    height: 38px;
+}
+
+.switchBtn {
+    padding: 10px;
+    width: 50px;
+    margin: 0 auto;
+    background: #bc2525;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+.convertBtn:hover, .switchBtn:hover {
+    opacity: 1;
+}
+
+h3.currencyHead {
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 6px;
+}

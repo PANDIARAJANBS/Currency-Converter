@@ -1,0 +1,1 @@
+export const isValidNumber=(v:string):boolean=>/^\d+(\.\d+)?$/.test(v.trim());
